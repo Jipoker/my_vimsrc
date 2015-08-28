@@ -1,9 +1,10 @@
 set nocompatible
 filetype plugin on
 
-set ru "标尺
-set nu "行号
-set lines=38  columns=128
+set ruler "标尺
+set number "行号
+set cursorline   " 突出显示当前行
+set lines=36  columns=125
 set wildmenu
 set wildmode=full
 set history=200
@@ -11,6 +12,7 @@ colorscheme xoria256
 syntax enable 
 syntax on
 set go=  "无菜单无工具栏
+set cpoptions+=$
 
 "-----------------------------------------------------------------------------
 "set for Windows System.  -- Start
