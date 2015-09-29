@@ -8,6 +8,8 @@ set lines=36  columns=125
 set wildmenu
 set wildmode=full
 set history=200
+set hlsearch
+set incsearch  "º¥ ±∆•≈‰œ‘ æ
 colorscheme xoria256
 syntax enable 
 syntax on
@@ -25,6 +27,17 @@ inoremap <C-A> <C-O>gg<C-O>gH<C-O>G
 vnoremap <C-C> "+y
 " CTRL-V is Paste
 map <C-V>		"+gP
+" Pasting blockwise and linewise selections is not possible in Insert and
+" Visual mode without the +virtualedit feature.  They are pasted as if they
+" were characterwise instead.
+" Uses the paste.vim autoload script.
+" Use CTRL-G u to have CTRL-Z only undo the paste.  
+exe 'inoremap <script> <C-V> <C-G>u' . paste#paste_cmd['i']
+exe 'vnoremap <script> <C-V> ' . paste#paste_cmd['v']
+
+" CTRL-Z is Undo; not in cmdline though
+noremap <C-Z> u
+inoremap <C-Z> <C-O>u
 " Use CTRL-S for saving, also in Insert mode
 noremap <C-S>		:update<CR>
 vnoremap <C-S>		<C-C>:update<CR>

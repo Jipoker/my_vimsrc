@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='C:/Users/Longfei/Desktop/vim学习视频/code/jumps'
+let g:netrw_dirhist_2='C:\Users\Longfei\Desktop\vim学习视频\code\jumps'
+let g:netrw_dirhist_3='C:/Users/Longfei/Desktop/vim学习视频/code/jumps'
