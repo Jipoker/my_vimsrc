@@ -105,8 +105,3 @@ if 1
   let &cpoptions = s:save_cpo
   unlet s:save_cpo
 endif
-
-" 2015年7月21日 clf 添加解除 CTRL-Y 的映射
-unmap <C-Y>
-" 在普通模式和可视模式下  , 映射 <C-W> 
-noremap ,  <C-W>
