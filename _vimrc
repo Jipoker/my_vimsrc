@@ -21,8 +21,8 @@ set cpoptions+=$
 "set for Windows System.  -- Start
 "-----------------------------------------------------------------------------
 " CTRL-A is Select all
-noremap <C-A> gggH<C-O>G
-inoremap <C-A> <C-O>gg<C-O>gH<C-O>G
+" noremap <C-A> gggH<C-O>G
+" inoremap <C-A> <C-O>gg<C-O>gH<C-O>G
 
 " CTRL-C is Copy
 vnoremap <C-C> "+y
